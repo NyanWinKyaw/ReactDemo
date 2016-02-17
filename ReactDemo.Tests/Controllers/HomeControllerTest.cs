@@ -25,17 +25,17 @@ namespace ReactDemo.Tests.Controllers
             Assert.IsNotNull(result);
         }
 
-        //[TestMethod]
-        //public void IndexNot()
-        //{
-        //    // Arrange
-        //    HomeController controller = new HomeController();
+        [TestMethod]
+        public void IndexNot()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
 
-        //    // Act
-        //    ViewResult result = controller.Index() as ViewResult;
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
 
-        //    // Assert
-        //    Assert.IsNull(result);
-        //}
+            // Assert
+            Assert.IsNull(result);
+        }
     }
 }
